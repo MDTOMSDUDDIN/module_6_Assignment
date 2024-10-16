@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color:green;
+            padding:10px;
+        
+        }
+        form{
+            width: 500px;
+            height: 450px;
+            background-color:#fff;
+            padding:15px;
+            margin-top: 30px;
+            border-radius: 10px;
+          
+        }
+        h1{
+            margin: 10px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        form .user-details{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        form .user-details .input-box {
+            margin: 15px 0 12px 0;
+            width: calc(100% /2 - 15px);
+        }
+      
+        .user-details .input-box  input {
+            height: 35px;
+            width: 100%;
+            margin-top: 7px;
+            border-radius: 5px;
+            font-size: 15px;
+            
+        }
+        .gender{
+            font-size: 18px;
+        }
+        ::placeholder{
+            padding-left: 8px;
+        }
+        button{
+            margin: 6px;
+            margin-top: 20px;
+            padding: 5px 15px 5px 12px;
+            border-radius: 5px;  
+            border: none;
+            font-size: 18px;
+        }
+        .Cancel{
+            background-color: red;
+            color: white;
+        }
+        .submit{
+            background:linear-gradient(green,Fuchsia);
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    
+        <form >
+             <h1>Registration Form</h1>
+
+
+            <div class="user-details">
+                <div class="input-box">
+                    
+                     <label for="fullname">Full Name</label>
+                    <input type="text" name="name" placeholder="Enter Your Full Name">
+                </div>
+
+                <div class="input-box">
+                    <label for="">User Name</label>
+                    <input type="text" name="username" placeholder="Enter Your User Name">
+                </div>
+
+                <div class="input-box">
+                    <label for="">Email</label>
+                    <input type="email" name="username" placeholder="Enter Your Email">
+                </div>
+
+                <div class="input-box">
+                    <label for="">Phone Number</label>
+                    <input type="text" name="Number" placeholder="Enter Your  Phone Number">
+                </div>
+
+                <div class="input-box">
+                    <label for="">Password</label>
+                    <input type="password" name="password" placeholder="Enter Your Password">
+                </div>
+
+                <div class="input-box">
+                    <label for="">Confirm Password</label>
+                    <input type="password" name="confirm_password" placeholder="Enter Your confirm password">
+                </div>
+
+                <div >
+                    <label for="">Gender</label><span class="gender"></span><br>
+                    <input type="radio" name="gender" value="Male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" value="Female">
+                    <label for="Female">Female</label>
+                    <input type="radio" name="gender" value="Other">
+                    <label for="other">Other</label>
+                </div>
+                
+            </div>
+            <div>
+                <button class="Cancel">Cancel</button>
+                <button class="submit">Submit</button>
+             </div>
+        </form>
+</body>
+</html>
